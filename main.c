@@ -15,7 +15,6 @@ int main()
     };
 
     int s = sizeof(arr)/sizeof(arr[0]);
-    
-
-
+    int heigh = solve_heigh(s);
+    print_array(arr, heigh);
 }
