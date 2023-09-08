@@ -5,19 +5,18 @@
 int solve_heigh(int s)
 {
     int discriminant = sqrt(1 + 8 * s);
-    int h = (1 + discriminant)/2;
-    return h;
+    return (1 + discriminant)/2;
 }
 
 void print_array(int* array, int heigh)
 {
-    int p = 0;
-    for (int i = 0; i < heigh; i++)
+    int index = 0;
+    for (int line_number = 0; line_number < heigh; line_number++)
     {
-       for (int j = 0; j < i; j++)
+       for (int index_in_line = 0; index_in_line < line_number; index_in_line++)
        {
-        printf("%2d ", array[p]);
-        p++;
+        printf("%2d ", array[index]);
+        index++;
        }
        printf("\n");
     }

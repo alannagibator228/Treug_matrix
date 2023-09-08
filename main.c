@@ -14,7 +14,7 @@ int main()
         22, 23, 24, 25, 26, 27, 28
     };
 
-    int s = sizeof(arr)/sizeof(arr[0]);
-    int heigh = solve_heigh(s);
+    int size = sizeof(arr)/sizeof(arr[0]);
+    int heigh = solve_heigh(size);
     print_array(arr, heigh);
 }
